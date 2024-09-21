@@ -15,7 +15,7 @@ class ExceedError(Exception):
 
 class Application:
     def __init__(self):
-        self.ui = uiLoader.load("ui.ui")
+        self.ui = uiLoader.load("./ui.ui")
 
         unitButtonGroup = QButtonGroup(window)
         unitButtonGroup.addButton(self.ui.useTickButton, 1)
